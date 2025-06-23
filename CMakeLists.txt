@@ -21,4 +21,4 @@ set(BUILD_GMOCK OFF CACHE BOOL "do not use gmock")
 set(INSTALL_GTEST OFF CACHE BOOL "do not install gtest")
 add_subdirectory(googletest)
 
-add_subdirectory(code)
+add_subdirectory(test)

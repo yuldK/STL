@@ -25,13 +25,8 @@ target_link_libraries(${target}
 		${WINLIBS}
 )
 
+enable_testing()
 add_test(
-	NAME
-		${target}
-	COMMAND
-		"${CMAKE_CTEST_COMMAND}"
-		 --build-and-test "${MY_SOURCE_DIR}/examples/simple"
-						  "${CMAKE_CURRENT_BINARY_DIR}/simple"
-		 --build-generator "${CMAKE_GENERATOR}"
-		 --test-command "${CMAKE_CTEST_COMMAND}"
+	NAME ${target}
+	COMMAND ${target}
 )
